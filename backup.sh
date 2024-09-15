@@ -1,7 +1,5 @@
 #!/bin/bash
 
-ERROR_LOG="error.log"
-
 # Function to compress the directory based on the compression algorithm
 compress_backup() {
     DIR=$1
