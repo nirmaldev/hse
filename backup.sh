@@ -33,19 +33,6 @@ encrypt_backup() {
     fi
 }
 
-# Check if file exists and prompt for overwrite
-check_and_prompt() {
-    FILE=$1
-    if [[ -f "$FILE" ]]; then
-        read -p "$FILE already exists. Overwrite? (y/n): " choice
-        case "$choice" in
-            y|Y) return 0 ;;
-            n|N) echo "Operation aborted by user." ; exit 0 ;;
-            *) echo "Invalid choice. Exiting." ; exit 1 ;;
-        esac
-    fi
-}
-
 # Main script execution
 COMMAND=$1
 shift
@@ -61,14 +48,6 @@ if [[ "$COMMAND" == "compress_backup" ]]; then
         shift
     done
 
-    # Ensure the required arguments are provided
-    if [[ -z "$DIR" || -z "$COMP" || -z "$OUT" ]]; then
-        echo "Error: Missing required arguments." >> error.log
-        exit 1
-    fi
-
-    # Check for existing output files
-    check_and_prompt "$OUT"
 
     compress_backup "$DIR" "$COMP" "$OUT"
     encrypt_backup "$OUT"
