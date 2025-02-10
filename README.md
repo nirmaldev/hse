@@ -16,12 +16,12 @@ The dataset was obtained from AO CELT https://www.celt.ru/
 ## Table of Contents
 
 1. **[Project Setup](#project-setup)**
-2. [Libraries and Dependencies](#libraries-and-dependencies)
-3. [Data Collection and Preprocessing](#data-collection-and-preprocessing)
-4. [Model Development](#model-development)
-5. [Model Evaluation](#model-evaluation)
-6. [Results and Discussion](#results-and-discussion)
-7. [Conclusion and Future Work](#conclusion-and-future-work)
+2. **[Libraries and Dependencies](#libraries-and-dependencies)**
+3. **[Data Collection and Preprocessing](#data-collection-and-preprocessing)**
+4. **[Model Development](#model-development)**
+5. **[Model Evaluation](#model-evaluation)**
+6. **[Results and Discussion](#results-and-discussion)**
+7. **[Conclusion and Future Work](#conclusion-and-future-work)**
 
 ---
 
@@ -31,7 +31,7 @@ This section covers the necessary Python libraries that are used for data analys
 
 ---
 
-## 2. Install Required Libraries
+## 2. Libraries and Dependencies
 
 The project depends on several libraries, including:
 - `deep_translator`
@@ -42,23 +42,43 @@ The project depends on several libraries, including:
 
 ---
 
-## 3. Download SpaCy Model
+## 3.Data Collection and Preprocessing
 
-This section involves downloading the SpaCy model required for processing Russian text data.
-
----
-
-## 4. Import Core Libraries
-
-The following libraries are imported for use:
-- Data handling: `pandas`, `numpy`
-- Data visualization: `matplotlib`, `seaborn`
-- Preprocessing and machine learning: `sklearn`, `imblearn`
-- Deep learning: `tensorflow.keras`
-- NLP: `nltk`, `gensim`, `spacy`
+The dataset used in this project is sourced from the AO CELT Clinic and contains clinical data such as ECG signals, cholesterol, glucose, heart rate, and patient demographics. The dataset has 146,552 entries and 26 features.
 
 ---
 
-## 5. Download Russian Stopwords
+## 4. Model Development
 
-NLTK is used to download a list of Russian stopwords for text preprocessing.
+The following models were developed and trained:
+
+- XGBoost: A powerful gradient boosting algorithm suitable for both categorical and numerical features.
+- CatBoost: A gradient boosting model optimized for handling categorical features.
+
+Both models were trained to predict the risk of heart disease, and techniques like SMOTE and class weighting were applied to mitigate class imbalance.
+
+---
+
+## 5. Model Evaluation
+
+Models are evaluated using the following metrics:
+
+- AUC-ROC
+- F1-Score
+- Classification Report
+
+---
+## 6. Results and Discussion
+
+Both XGBoost and CatBoost demonstrated strong performance, achieving high AUC-ROC scores. However, challenges were encountered with the minority class (deceased patients) due to class imbalance.
+
+---
+## 7. Conclusion and Future Work
+
+Conclusion:
+ - XGBoost and CatBoost are effective models for predicting heart disease risk from clinical data.
+Future Work:
+ - Implement more advanced deep learning models like LSTM and CNN for better handling of sequential ECG signal data.
+
+
+---
