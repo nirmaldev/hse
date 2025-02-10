@@ -25,7 +25,7 @@ The dataset was obtained from AO CELT https://www.celt.ru/
 
 ---
 
-## 1. Importing Required Libraries
+## 1. Project Setup
 
 This section covers the necessary Python libraries that are used for data analysis, text preprocessing, machine learning, and deep learning tasks.
 
