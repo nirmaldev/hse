@@ -9,16 +9,19 @@
 ## Project Overview
 
 This project aims to apply deep learning techniques to predict heart disease using clinical data such as ECG signals, cholesterol levels, heart rate, and glucose levels.
+The dataset was obtained from AO CELT https://www.celt.ru/
 
 ---
 
 ## Table of Contents
 
-1. **[Importing Required Libraries](#1-importing-required-libraries)**
-2. **[Install Required Libraries](#2-install-required-libraries)**
-3. **[Download SpaCy Model](#3-download-spacy-model)**
-4. **[Import Core Libraries](#4-import-core-libraries)**
-5. **[Download Russian Stopwords](#5-download-russian-stopwords)**
+1. [Project Setup](#project-setup)
+2. [Libraries and Dependencies](#libraries-and-dependencies)
+3. [Data Collection and Preprocessing](#data-collection-and-preprocessing)
+4. [Model Development](#model-development)
+5. [Model Evaluation](#model-evaluation)
+6. [Results and Discussion](#results-and-discussion)
+7. [Conclusion and Future Work](#conclusion-and-future-work)
 
 ---
 
