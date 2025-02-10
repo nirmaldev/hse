@@ -15,13 +15,13 @@ The dataset was obtained from AO CELT https://www.celt.ru/
 
 ## Table of Contents
 
-1. **[Project Setup](#project-setup)**
-2. **[Libraries and Dependencies](#libraries-and-dependencies)**
-3. **[Data Collection and Preprocessing](#data-collection-and-preprocessing)**
-4. **[Model Development](#model-development)**
-5. **[Model Evaluation](#model-evaluation)**
-6. **[Results and Discussion](#results-and-discussion)**
-7. **[Conclusion and Future Work](#conclusion-and-future-work)**
+1. [Project Setup](#project-setup)
+2. [Libraries and Dependencies](#libraries-and-dependencies)
+3. [Data Collection and Preprocessing](#data-collection-and-preprocessing)
+4. [Model Development](#model-development)
+5. [Model Evaluation](#model-evaluation)
+6. [Results and Discussion](#results-and-discussion)
+7. [Conclusion and Future Work](#conclusion-and-future-work)
 
 ---
 
