@@ -15,7 +15,7 @@ The dataset was obtained from AO CELT https://www.celt.ru/
 
 ## Table of Contents
 
-1. [Project Setup](#project-setup)
+1. **[Project Setup](#project-setup)**
 2. [Libraries and Dependencies](#libraries-and-dependencies)
 3. [Data Collection and Preprocessing](#data-collection-and-preprocessing)
 4. [Model Development](#model-development)
